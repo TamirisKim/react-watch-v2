@@ -1,0 +1,67 @@
+/*=============== STORY ===============*/
+.story {
+    &__container {
+        row-gap: 7.5rem;
+        padding-top: 3rem;
+        align-items: center;
+        column-gap: 13rem;
+        display: flex;
+    }
+    &__title {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    &__description {
+        margin-bottom: 2.5rem;
+    }
+    &__images {
+        position: relative;
+    }
+    &__img,
+    &__square {
+        width: 280px;
+    }
+    &__square {
+        height: 280px;
+        background-color: $orange;
+    }
+    &__img {
+        position: absolute;
+        left: -3rem;
+        top: -3rem;
+    }
+    &__desc{
+        margin-top: 30px;
+    }
+}
+.section__title {
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 67px;
+        height: 2px;
+        background-color: $orange;
+    }
+}
+.button-dark {
+    background-color: #282828;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 7px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    @include noselect();
+}

@@ -1,0 +1,35 @@
+/*=============== FOOTER ===============*/
+
+.footer {
+   &__container {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      row-gap: 2rem;
+      border-bottom: 1px solid rgb(171, 171, 171);
+      padding-bottom: 3rem;
+   }
+   &__title {
+      margin-bottom: 10px;
+   }
+   &__list,
+   &__links {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.75rem;
+   }
+
+   &__social {
+      display: flex;
+      column-gap: 1rem;
+
+      &-link {
+         font-size: 1.25rem;
+      }
+   }
+   &__copy {
+      display: block;
+      margin-block: 30px;
+      text-align: center;
+   }
+}
